@@ -2,7 +2,7 @@ name: Coverage report
 
 on:
   workflow_run:
-    workflows: [ "Test1" ]
+    workflows: [ "Test" ]
     types:
       - completed
 jobs:
@@ -23,7 +23,7 @@ jobs:
           commit: ${{ github.event.workflow_run.head_commit.id }}
           name: coverage
           path: coverage
-      - name: Produce Coverage report
+      - name: Produce Cobertura Coverage report
         uses: ./
         with:
           path: coverage/cobertura-coverage.xml
