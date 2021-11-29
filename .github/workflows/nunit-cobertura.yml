@@ -14,4 +14,4 @@ jobs:
         with:
           path: coverage/nunit-cobertura.xml
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          minimum_coverage: 75
+          minimum_coverage: 7
