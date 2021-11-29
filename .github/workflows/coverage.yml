@@ -12,6 +12,6 @@ jobs:
       - name:  Cobertura Coverage report
         uses: 5monkeys/cobertura-action@master
         with:
-          path: coverage/cobertura-coverage.xml
+          path: coverage/nunit-cobertura.xml
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           minimum_coverage: 75
