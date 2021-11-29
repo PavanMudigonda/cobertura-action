@@ -1,4 +1,4 @@
-name: Coverage report
+name: Coverage report0
 
 on:
   workflow_run:
