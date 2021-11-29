@@ -1,4 +1,4 @@
-name: Coverage report
+name: Coverage report - PYTEST COV
 
 on: [push]
   
