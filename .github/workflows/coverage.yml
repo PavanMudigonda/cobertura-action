@@ -9,10 +9,9 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: Produce Cobertura Coverage report
-        uses: ./
+      - name:  Cobertura Coverage report
+        uses: 5monkeys/cobertura-action@master
         with:
           path: coverage/cobertura-coverage.xml
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          minimum_coverage: 10
-          fail_below_threshold: true
+          minimum_coverage: 75
