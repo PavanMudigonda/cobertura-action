@@ -2,7 +2,7 @@ name: Coverage report0
 
 on:
   workflow_run:
-    workflows: [ "Test" ]
+    workflows: [ "Test1" ]
     types:
       - completed
 jobs:
